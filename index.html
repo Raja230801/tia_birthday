@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 AGUSTUS 2025 🎉🎂💖</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(45deg, #ff69b4, #ffdab9, #ba55d3);
+            background-size: 200% 200%;
+            animation: gradientAnimation 10s infinite alternate;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 50px 70px;
+            border-radius: 30px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(20px);
+            animation: fadeIn 1.5s ease-out;
+            max-width: 90%;
+            z-index: 10;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        h1 {
+            font-size: 4em;
+            margin-bottom: 40px;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+            animation: pulse 2s infinite alternate;
+        }
+
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.03); }
+        }
+
+        #surprise-button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 20px 45px;
+            font-size: 1.5em;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            outline: none;
+        }
+
+        #surprise-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        #gallery-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+            z-index: 20;
+        }
+
+        #gallery-container.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .photo-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            transform: scale(0.5);
+            opacity: 0;
+            transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.6s ease-out;
+            position: absolute;
+            max-width: 90%;
+        }
+
+        .photo-card.active {
+            transform: scale(1);
+            opacity: 1;
+        }
+        
+        .photo-card img {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 5px solid #f48fb1;
+        }
+
+        .photo-card h2 {
+            color: #555;
+            margin-top: 15px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <audio id="background-music" loop>
+        <source src="tia_song_birthday.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+        <h1>08-08-2025 🎉</h1>
+        <button id="surprise-button">Happy Birthday Tiaaa!!!</button>
+    </div>
+
+    <div id="gallery-container">
+    </div>
+
+    <script>
+        const surpriseButton = document.getElementById('surprise-button');
+        const galleryContainer = document.getElementById('gallery-container');
+        const backgroundMusic = document.getElementById('background-music');
+
+        const photos = [
+            { src: 'tia1.jpg', caption: 'Hallo Cantik!!' },
+            { src: 'tia2.jpg', caption: 'Wah, Pacar aku sudah bertambah umur' },
+            { src: 'tia3.jpg', caption: 'Selamat Ulang Tahun yaa Sayang!' },
+            { src: 'tia4.jpg', caption: 'Panjang Umur' },
+            { src: 'tia5.jpg', caption: 'Sehat Selalu' },
+            { src: 'tia6.jpg', caption: 'Selalu Menjadi Kebanggan Orang Tua' },
+            { src: 'tia7.jpg', caption: 'Murah Rejekinya, Dimudahkan Jalannya' },
+            { src: 'tia8.jpg', caption: 'Dan apa yang kamu cita-cita kan' },
+            { src: 'tia9.jpg', caption: 'Akan Menjadi Kenyataan' },
+            { src: 'tia10.jpg', caption: 'AAMIIN' },
+            { src: 'tia11.jpg', caption: 'Sayangg.. Terimakasih buat kesempatan yang kamu kasih untuk aku bisa merayakan ulang tahun kamu di Tahun ini' },
+            { src: 'tia12.jpg', caption: 'Pesan aku.. Tetap seperti Tia yang aku kenal yaa, Tia yang makin hari makin bertambah dewasa' },
+            { src: 'tia13.jpg', caption: 'Tia yang selalu Riang dan penuh Sukacita' },
+            { src: 'tia14.jpg', caption: 'Tia yang selalu berusaha buat hal yang diinginkan' },
+            { src: 'tia15.jpg', caption: 'Tia yang baik. Tia yang Sederhana. Tia yang Rendah Hati' },
+            { src: 'tia16.jpg', caption: 'Sekali lagi Selamat Ulang Tahun yaa Sayang. Banyak doa yang tidak bisa aku sampaikan disini, tapi aku udah mendoakan kamu jauh sebelum ini dibuat. Sampai Ketemu Di Tanggal, Bulan, dan Tahun Selanjutnya Sayang' }
+        ];
+
+        surpriseButton.addEventListener('click', async () => {
+            surpriseButton.style.display = 'none';
+            galleryContainer.classList.add('show');
+            showPhotosSequentially(0);
+            
+            try {
+                await backgroundMusic.play();
+                console.log("Lagu berhasil diputar!");
+            } catch (err) {
+                console.error("Gagal memutar lagu:", err);
+                alert("Browser memblokir pemutaran otomatis. Mohon aktifkan suara di tab ini.");
+            }
+        });
+
+        function showPhotosSequentially(index) {
+            if (index < photos.length) {
+                const photoCard = document.createElement('div');
+                photoCard.classList.add('photo-card');
+                photoCard.innerHTML = `
+                    <img src="${photos[index].src}" alt="Foto ${index + 1}">
+                    <h2>${photos[index].caption}</h2>
+                `;
+                galleryContainer.appendChild(photoCard);
+                
+                setTimeout(() => {
+                    photoCard.classList.add('active');
+                }, 100);
+
+                setTimeout(() => {
+                    photoCard.classList.remove('active');
+                    setTimeout(() => {
+                        galleryContainer.removeChild(photoCard);
+                        showPhotosSequentially(index + 1);
+                    }, 600);
+                }, 3000);
+            } else {
+                // Semua foto sudah ditampilkan
+            }
+        }
+    </script>
+</body>
+</html>
